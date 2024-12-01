@@ -74,7 +74,7 @@
   backdrop-filter: blur(12px);
   border-radius: 30px;
   overflow: hidden;
-  transform: translateY(-20%); /* Added default position */
+  transform: translateY(-25%); /* Added default position */
   opacity: 0;
   animation: fadeIn 1.2s ease-out forwards;
 }
@@ -190,7 +190,7 @@
   opacity: 0;
   animation: fadeIn 1s ease-out 1s forwards;
   text-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
-  transform: rotate(-2deg);
+  transform: rotate(0deg);
 }
 
 @keyframes fadeIn {
