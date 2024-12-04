@@ -11,7 +11,7 @@ const FirstScreen = () => {
   
   useEffect(() => {
     const backgroundImages = [
-   image1,image2,image3
+      image1, image2, image3
     ];
 
     const loadImage = (imageSrc) => {
@@ -29,8 +29,6 @@ const FirstScreen = () => {
       })
       .catch((err) => {
         console.error("Error loading images", err);
-        // You might want to set imagesLoaded to true even on error
-        // to show the content instead of infinite loading
         setImagesLoaded(true);
       });
   }, []);
@@ -51,13 +49,13 @@ const FirstScreen = () => {
         <div className={styles.glowingBorder} />
         <div className={styles.decorBorder}>
           <div className={styles.innerContent}>
-            <h1 className={styles.mainTitle}>SUZANA PINHASI</h1>
+            <h1 className={styles.mainTitle}>HEART OF BEAUTY</h1>
             <div className={styles.separator}>
               <div className={styles.decorLine} />
               <div className={styles.decorDiamond} />
               <div className={styles.decorLine} />
             </div>
-            <h3 className={styles.subTitle}>Heart Of Beauty</h3>
+            <p className={styles.subTitle}>קורסים מקיפים שיהפכו אותך לבעלת עסק מצליח ורווחי במקצועות הביוטי</p>
           </div>
           <div className={styles.arrowContainer}>
             <ChevronDown className={styles.arrow} size={38} strokeWidth={1.5}/>

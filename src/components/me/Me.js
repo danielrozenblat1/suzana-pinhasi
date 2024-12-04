@@ -1,7 +1,8 @@
 import React from 'react';
 import styles from './Me.module.css';
-import suzana from "../../images/סוזנה פנחסי ימין.png";
+import suzana from "../../images/סוזנה פנחסי.png";
 import suzanaStudents from "../../images/סוזנה בנות עם תעודה.png"
+import Works from '../recommends/Works';
 const AboutMe = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const AboutMe = () => {
       <div className={styles.bottomImageContainer}>
         <img src={suzanaStudents} alt="סוזנה פנחסי" className={styles.bottomImage} />
       </div> */}
-
+  <Works/>
     </>
   );
 };

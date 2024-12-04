@@ -6,9 +6,11 @@ import SecondScreen from './screens/SecondScreen';
 import AboutMe from './components/me/Me';
 import SyllabusCards from './components/courses/Courses';
 import ThirdScreen from './screens/ThirdScreen';
-import Recommends from './components/recommends/Recommends';
+
 import ByMe from './components/ByMe/ByMe';
 import ForthScreen from './screens/ForthScreen';
+import WhoFits from './components/fit/WhoFits';
+import BenefitCard from './components/bonuses/Bonus';
 
 function App() {
   return <>
@@ -16,9 +18,13 @@ function App() {
   <FirstScreen/>
   <SecondScreen/>
   <AboutMe/>
+
 <ThirdScreen/>
-<Recommends/>
+<WhoFits/>
+
 <ForthScreen/>
+
+
 <ByMe/>
   </>
 }

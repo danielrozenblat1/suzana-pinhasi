@@ -38,7 +38,7 @@
   height: auto;
   max-height: 500px;
   border-radius: 20px;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 2;

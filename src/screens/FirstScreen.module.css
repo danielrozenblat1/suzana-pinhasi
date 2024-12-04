@@ -55,13 +55,13 @@
 }
 
 .centerImage {
-  background-image: url('../images/סוזנה פנחסי ימין.png');
+  background-image: url('../images/סוזנה פנחסי מרכז.png');
   display: block;
 }
 
 .rightImage {
   display: none;
-  background-image: url('../images/סוזנה פנחסי מרכז.png');
+  background-image: url('../images/סוזנה פנחסי ימין.png');
 }
 
 .contentBox {
@@ -74,7 +74,6 @@
   backdrop-filter: blur(12px);
   border-radius: 30px;
   overflow: hidden;
-  transform: translateY(-25%); /* Added default position */
   opacity: 0;
   animation: fadeIn 1.2s ease-out forwards;
 }
@@ -179,7 +178,7 @@
 }
 
 .subTitle {
-  font-family: "Bask";
+  font-family: "AssistantR";
   font-size: 2.4rem;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.75));
   -webkit-background-clip: text;
@@ -231,6 +230,7 @@
   );
 }
 
+/* Media Queries */
 /* Mobile - Extra Small */
 @media (max-width: 350px) {
   .contentBox {
@@ -247,7 +247,7 @@
     text-overflow: ellipsis;
   }
   .subTitle {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
   .decorBorder {
     padding: 1.2rem 1rem;
@@ -276,7 +276,8 @@
     text-overflow: ellipsis;
   }
   .subTitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    width: 100%;
   }
   .decorBorder {
     padding: 1.5rem 1.2rem;
@@ -302,7 +303,7 @@
     text-overflow: ellipsis;
   }
   .subTitle {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
   .decorBorder {
     padding: 1.8rem 1.5rem;
@@ -324,16 +325,13 @@
     font-size: 2.2rem;
   }
   .subTitle {
-    font-size: 1.9rem;
+    font-size: 1.4rem;
   }
   .decorBorder {
     padding: 2rem 1.8rem;
   }
   .decorLine {
     width: 52px;
-  }
-  .leftImage, .rightImage {
-    display: block;
   }
 }
 
@@ -348,16 +346,13 @@
     font-size: 2.3rem;
   }
   .subTitle {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
   .decorBorder {
     padding: 2.2rem 2rem;
   }
   .decorLine {
     width: 55px;
-  }
-  .leftImage, .rightImage {
-    display: block;
   }
 }
 
@@ -372,7 +367,7 @@
     font-size: 2.4rem;
   }
   .subTitle {
-    font-size: 2.1rem;
+    font-size: 1.4rem;
   }
   .decorBorder {
     padding: 2.3rem 2.1rem;
@@ -380,13 +375,10 @@
   .decorLine {
     width: 58px;
   }
-  .leftImage, .rightImage {
-    display: block;
-  }
 }
 
-/* 850-950px */
-@media (min-width: 850px) and (max-width: 950px) {
+/* 850px and above */
+@media (min-width: 850px) {
   .contentBox {
     width: 80%;
     max-width: 680px;
@@ -396,7 +388,7 @@
     font-size: 2.5rem;
   }
   .subTitle {
-    font-size: 2.2rem;
+    font-size: 1.5rem;
   }
   .decorBorder {
     padding: 2.4rem 2.2rem;
@@ -404,79 +396,10 @@
   .decorLine {
     width: 60px;
   }
-  .leftImage, .rightImage {
+  .leftImage {
     display: block;
   }
-}
-
-/* 950-1050px */
-@media (min-width: 950px) and (max-width: 1050px) {
-  .contentBox {
-    width: 78%;
-    max-width: 700px;
-    margin: 2.4rem;
-  }
-  .mainTitle {
-    font-size: 2.6rem;
-  }
-  .subTitle {
-    font-size: 2.3rem;
-  }
-  .decorBorder {
-    padding: 2.5rem 2.3rem;
-  }
-  .decorLine {
-    width: 62px;
-  }
-  .leftImage, .rightImage {
-    display: block;
-  }
-}
-
-/* 1050-1150px */
-@media (min-width: 1050px) and (max-width: 1150px) {
-  .contentBox {
-    width: 75%;
-    max-width: 720px;
-    margin: 2.5rem;
-  }
-  .mainTitle {
-    font-size: 2.7rem;
-  }
-  .subTitle {
-    font-size: 2.4rem;
-  }
-  .decorBorder {
-    padding: 2.6rem 2.4rem;
-  }
-  .decorLine {
-    width: 64px;
-  }
-  .leftImage, .rightImage {
-    display: block;
-  }
-}
-
-/* 1150-1250px */
-@media (min-width: 1150px) and (max-width: 1250px) {
-  .contentBox {
-    width: 72%;
-    max-width: 750px;
-    margin: 2.6rem;
-  }
-  .mainTitle {
-    font-size: 2.8rem;
-  }
-  .subTitle {
-    font-size: 2.5rem;
-  }
-  .decorBorder {
-    padding: 2.7rem 2.5rem;
-  }
-  .decorLine {
-    width: 65px;
-  }
-  .leftImage, .rightImage {
+  .rightImage {
     display: block;
   }
 }
