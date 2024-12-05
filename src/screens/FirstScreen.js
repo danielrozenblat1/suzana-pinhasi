@@ -55,7 +55,7 @@ const FirstScreen = () => {
               <div className={styles.decorDiamond} />
               <div className={styles.decorLine} />
             </div>
-            <p className={styles.subTitle}>קורסים מקיפים שיהפכו אותך לבעלת עסק מצליח ורווחי במקצועות הביוטי</p>
+            <p className={styles.subTitle}>קורסים מקצועיים שיפתחו לך דלת לעולם הביוטי</p>
           </div>
           <div className={styles.arrowContainer}>
             <ChevronDown className={styles.arrow} size={38} strokeWidth={1.5}/>

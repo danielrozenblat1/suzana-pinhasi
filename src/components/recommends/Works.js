@@ -23,6 +23,8 @@ const Works = () => {
       <div className={styles.explain}>
         ב-8 השנים האחרונות הוצאתי אלפי בנות מרוצות! קיבצתי עבורך רק חלק מהעבודות כדי שתראי לאיזו רמה את יכולה להגיע
       </div>
+
+   
       <div className={styles.container}>
         <div className={styles.scrollTrack}>
           {/* קבוצה ראשונה של תמונות */}

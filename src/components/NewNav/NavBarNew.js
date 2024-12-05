@@ -59,7 +59,7 @@ const NavBarNew = () => {
     }
   };
 
-  const menuItems = ['שירותים נוספים', 'תהליך העבודה איתי', 'שאלות תשובות', 'מי אני'];
+  const menuItems = ['הקורסים שלי', 'שאלות תשובות', 'מי אני'];
 
   return (
     <nav className={`${styles.navbar} ${isSticky ? styles.sticky : ''}`}>

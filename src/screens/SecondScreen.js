@@ -6,7 +6,9 @@ import happy from "../Icons/wired-outline-633-female-standing-hover-success.json
 import infinity from "../Icons/wired-outline-233-arrow-22-hover-cycle (1).json"
 import dedicate from "../Icons/wired-outline-977-internship-hover-pinch.json"
 import wait from "../Icons/wired-outline-629-yoga-male-hover-pinch.json"
+import business from "../Icons/wired-outline-187-suitcase-morph-open.json"
 import NewBox from "../components/newBox/NewBox"
+import StyledMessages from "../components/trend/Trending"
 const SecondScreen=()=>{
 
 
@@ -16,12 +18,16 @@ const SecondScreen=()=>{
      <div className={styles.title}>ולהגיע למצב ש</div>
     <div className={styles.row}>
         <IconTextComponent text="את מכניסה סכומים שרק חלמת עליהם בכל חודש" icon={money}/>
-        <IconTextComponent text="את שולטת על הזמן שלך" icon={time}/>
+        <IconTextComponent text="את תקבעי בעצמך את שעות העבודה שלך" icon={time}/>
         <IconTextComponent text="את קמה כל בוקר בתחושה של הגשמה עצמית" icon={happy}/>
+        <IconTextComponent text="את תצאי עם מקצוע שיש לו ביקוש אינסופי" icon={business}/>
+        
     </div>
+    <div className={styles.title}>זה לגמרי אפשרי!</div>
+    <StyledMessages/>
 
-    <div className={styles.description}>חשוב לי להבהיר לך שאת לגמרי יכולה! אבל הדרך להצליח למלא יומן בכל תחום היא לא קלה</div>
-    <div className={styles.title}>וזה ידרוש ממך</div>
+    <div className={styles.description}>חשוב לי להבהיר לך שאת יכולה להגיע לגבהים מדהימים! אבל הדרך להצליח למלא יומן בכל תחום היא לא קלה</div>
+    <div className={styles.title}>והיא תדרוש ממך</div>
     <div className={styles.row}>
     <NewBox 
                 title="השקעה" 

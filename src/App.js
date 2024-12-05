@@ -14,7 +14,7 @@ import BenefitCard from './components/bonuses/Bonus';
 
 function App() {
   return <>
-  {/* <NavBarNew/> */}
+  <NavBarNew/>
   <FirstScreen/>
   <SecondScreen/>
   <AboutMe/>
