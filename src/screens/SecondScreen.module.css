@@ -1,0 +1,263 @@
+/* Base styles */
+.descriptionWrapper {
+    position: relative;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 1.4rem 2.2rem;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 253, 250, 0.95) 0%,
+        rgba(249, 247, 245, 0.92) 30%,
+        rgba(255, 247, 236, 0.575) 50%,
+        rgba(248, 243, 235, 0.92) 70%,
+        rgba(255, 253, 250, 0.95) 100%
+    );
+    border-radius: 14px;
+    backdrop-filter: blur(10px);
+    box-shadow: 
+        0 12px 25px -6px rgba(186, 171, 154, 0.2),
+        0 8px 16px -4px rgba(186, 171, 154, 0.15),
+        inset 0 0 0 1px rgba(255, 255, 255, 0.8),
+        inset 0 0 35px rgba(252, 248, 242, 0.4),
+        inset 3px 3px 12px rgba(255, 237, 219, 0.189),
+        inset -3px -3px 12px rgba(255, 255, 255, 0.8),
+        inset 6px 6px 16px rgba(187, 184, 181, 0.3),
+        inset -6px -6px 16px rgba(255, 237, 219, 0.189),
+        inset 0 0 28px rgba(255, 237, 219, 0.189);
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.title {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.5rem;
+    direction: rtl;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 2% auto;
+}
+
+.description {
+    font-family: 'AssistantR';
+    font-size: 1.4rem;
+    direction: rtl;
+    width:90%;
+    margin: 1% auto;
+    text-align: center;
+}
+
+/* Special Effects */
+.descriptionWrapper::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    padding: 1px;
+    background: linear-gradient(
+        300deg,
+        rgba(255, 252, 248, 0.8) 0%,
+        rgba(245, 240, 233, 0.4) 25%,
+        rgba(255, 226, 186, 0.6) 50%,
+        rgba(245, 240, 233, 0.4) 75%,
+        rgba(255, 252, 248, 0.8) 100%
+    );
+    border-radius: inherit;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: borderGlow 15s ease-in-out infinite;
+}
+
+.descriptionWrapper::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        45deg,
+        transparent 0%,
+        rgba(255, 255, 255, 0) 45%,
+        rgba(255, 255, 255, 0.6) 48%,
+        rgba(255, 255, 255, 0.7) 50%,
+        rgba(255, 255, 255, 0.6) 52%,
+        rgba(255, 255, 255, 0) 55%,
+        transparent 100%
+    );
+    transform: translateX(-100%) rotateZ(20deg);
+    animation: glossyShine 10s infinite;
+}
+
+/* Corner accents */
+.descriptionWrapper .corner {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1.5px solid rgba(235, 225, 215, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Paragraph styles */
+.descriptionWrapper p {
+    margin: 0;
+    text-align: center;
+    direction: rtl;
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.4rem;
+    color: #2a2a2a;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.3px;
+}
+
+/* Animations */
+@keyframes borderGlow {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes glossyShine {
+    0% {
+        transform: translateX(-100%) rotateZ(20deg);
+    }
+    50%, 100% {
+        transform: translateX(300%) rotateZ(20deg);
+    }
+}
+
+/* Responsive Design */
+/* 1150px - 1250px */
+@media (max-width: 1250px) {
+    .descriptionWrapper {
+        max-width: 70%;
+        padding: 1.3rem 2rem;
+    }
+    .title { font-size: 2.3rem; }
+    .description { font-size: 1.35rem; }
+}
+
+/* 1050px - 1150px */
+@media (max-width: 1150px) {
+    .descriptionWrapper {
+        max-width: 65%;
+        padding: 1.2rem 1.9rem;
+    }
+    .title { font-size: 2.2rem; }
+    .description { font-size: 1.3rem; }
+}
+
+/* 950px - 1050px */
+@media (max-width: 1050px) {
+    .descriptionWrapper {
+        max-width: 60%;
+        padding: 1.2rem 1.8rem;
+    }
+    .title { font-size: 2.1rem; }
+    .description { font-size: 1.25rem; }
+}
+
+/* 850px - 950px */
+@media (max-width: 950px) {
+    .descriptionWrapper {
+        max-width: 65%;
+        padding: 1.1rem 1.7rem;
+    }
+    .title { font-size: 2rem; }
+    .description { font-size: 1.2rem; }
+}
+
+/* 750px - 850px */
+@media (max-width: 850px) {
+    .descriptionWrapper {
+        max-width: 60%;
+        padding: 1rem 1.6rem;
+        margin: 25px auto;
+    }
+    .title { font-size: 1.9rem; }
+    .description { font-size: 1.15rem; }
+}
+
+/* 650px - 750px */
+@media (max-width: 750px) {
+    .descriptionWrapper {
+        max-width: 70%;
+        padding: 1rem 1.5rem;
+        margin: 20px auto;
+    }
+    .title { font-size: 2rem; }
+    .description { font-size: 1.2rem; }
+}
+
+/* 550px - 650px */
+@media (max-width: 650px) {
+    .descriptionWrapper {
+        max-width: 75%;
+        padding: 0.9rem 1.4rem;
+    }
+    .title { font-size: 2.1rem; }
+    .description { font-size: 1.25rem; }
+}
+
+/* 450px - 550px */
+@media (max-width: 550px) {
+    .descriptionWrapper {
+        max-width: 80%;
+        padding: 0.8rem 1.3rem;
+        margin: 15px auto;
+    }
+    .descriptionWrapper p{
+        font-size: 1.25rem;
+        width:90%;
+        text-align: center;
+        margin:0 auto
+    }
+    .title { font-size: 2.2rem; }
+    .description { font-size: 1.3rem; }
+}
+
+/* 350px - 450px */
+@media (max-width: 450px) {
+    .descriptionWrapper {
+        max-width: 85%;
+        padding: 0.7rem 1.2rem;
+        margin: 12px auto;
+        border-radius: 10px;
+    }
+    .descriptionWrapper p{
+        font-size: 1.2rem;
+        width:70%;
+        text-align: center;
+        margin:0 auto
+    }
+    .title { font-size: 2.1rem; }
+    .description { font-size: 1.2rem; }
+}
+
+/* Under 350px */
+@media (max-width: 350px) {
+    .descriptionWrapper {
+        max-width: 80%;
+        padding: 0.6rem 1rem;
+        margin: 10px auto;
+        border-radius: 8px;
+    }
+    .descriptionWrapper p{
+        font-size: 1.15rem;
+        width:90%;
+        text-align: center;
+        margin:0 auto
+    }
+    .title { font-size: 2.1rem; }
+    .description { font-size: 1.1rem; }
+}
